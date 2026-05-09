@@ -1133,4 +1133,57 @@ https://templatemo.com/tm-596-electric-xtra
             .shape-square {
                 transform: scale(0.6);
             }
+                    .ncell-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.ncell-box{
+    max-width:900px;
+    margin:auto;
+    padding:50px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#17004d,#003cff);
+    box-shadow:0 0 40px rgba(0,102,255,0.5);
+}
+
+.ncell-box h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.ncell-box p{
+    font-size:20px;
+    color:#dbe7ff;
+}
+
+.ncell-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.ncell-btn{
+    background:#00aaff;
+    color:white;
+    padding:15px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.ncell-btn:hover{
+    transform:scale(1.05);
+    background:white;
+    color:#003cff;
+}
+
+.secondary-btn{
+    background:#ffffff22;
+    border:1px solid white;
+}
         }
