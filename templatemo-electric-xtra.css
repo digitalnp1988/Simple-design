@@ -1207,3 +1207,12 @@ https://templatemo.com/tm-596-electric-xtra
     background:#0066ff;
 }
         }
+.custom-logo-text{
+    font-family:'Orbitron', sans-serif;
+    font-size:28px;
+    font-weight:700;
+    color:#ffffff;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-shadow:0 0 10px #00B2FF;
+}
