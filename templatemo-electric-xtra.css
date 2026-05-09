@@ -194,8 +194,12 @@ https://templatemo.com/tm-596-electric-xtra
         }
 
         .logo-svg {
-            width: 40px;
-            height: 40px;
+            .main-logo{
+    height:60px;
+    width:auto;
+    border-radius:10px;
+    object-fit:contain;
+}
         }
 
         .logo-text {
