@@ -1186,4 +1186,24 @@ https://templatemo.com/tm-596-electric-xtra
     background:#ffffff22;
     border:1px solid white;
 }
+                
+                    .social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.social-links a{
+    color:white;
+    text-decoration:none;
+    background:#111;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:#0066ff;
+}
         }
