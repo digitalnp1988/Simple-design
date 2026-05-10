@@ -23,6 +23,10 @@ https://templatemo.com/tm-596-electric-xtra
             overflow-x: hidden;
             position: relative;
             font-weight: 400;
+
+            touch-action: manipulation;
+-webkit-text-size-adjust: 100%;
+overflow-x: hidden;        
         }
 
         /* Animated background with hexagon pattern */
