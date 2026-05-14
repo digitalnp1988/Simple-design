@@ -1299,3 +1299,147 @@ overflow-x: hidden;
     }
 
 }
+
+.premium-about-logo{
+    position:relative;
+    width:320px;
+    height:320px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.glow-ring{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:
+    radial-gradient(circle,
+    rgba(0,178,255,0.4),
+    transparent 70%);
+
+    animation:rotateGlow 8s linear infinite;
+    filter:blur(15px);
+}
+
+.about-logo-img{
+    width:200px;
+    height:200px;
+    object-fit:contain;
+    z-index:2;
+
+    filter:
+    drop-shadow(0 0 20px #00B2FF)
+    drop-shadow(0 0 40px #ff6600);
+
+    animation:floatLogo 5s ease-in-out infinite;
+}
+
+.premium-hexagon-box{
+    position:relative;
+    width:320px;
+    height:320px;
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hexagon-glow{
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    background:
+    linear-gradient(135deg,
+    #00B2FF,
+    #003cff,
+    #ff6600);
+
+    clip-path:
+    polygon(
+    25% 6%,
+    75% 6%,
+    100% 50%,
+    75% 94%,
+    25% 94%,
+    0% 50%);
+
+    filter:blur(18px);
+
+    animation:rotateHex 10s linear infinite;
+}
+
+.hexagon-logo{
+
+    width:170px;
+    z-index:2;
+
+    filter:
+    drop-shadow(0 0 25px #00B2FF)
+    drop-shadow(0 0 50px #ff6600);
+
+    animation:floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes rotateGlow{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes rotateHex{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes floatLogo{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .premium-about-logo,
+    .premium-hexagon-box{
+
+        width:240px;
+        height:240px;
+    }
+
+    .about-logo-img,
+    .hexagon-logo{
+
+        width:140px;
+    }
+
+}
