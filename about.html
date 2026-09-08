@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Digital Nepal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link href="templatemo-electric-xtra.css"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           ABOUT PAGE
+        ========================= */
+
+        .about-page {
+            min-height: 100vh;
+            padding: 150px 8% 100px;
+            position: relative;
+        }
+
+        .about-page-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Page Title */
+
+        .about-page-title {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .about-page-title h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+
+            text-shadow:
+                0 0 10px #00B2FF,
+                0 0 30px #00B2FF;
+        }
+
+        .about-page-title p {
+            margin-top: 15px;
+            color: #00B2FF;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
+        /* =========================
+           MD SECTION
+        ========================= */
+
+        .md-section {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 70px;
+            align-items: center;
+
+            padding: 50px;
+
+            border: 1px solid rgba(0,178,255,0.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0,178,255,0.06),
+                    rgba(255,94,0,0.05)
+                );
+
+            box-shadow:
+                0 0 40px rgba(0,178,255,0.08);
+
+            backdrop-filter: blur(10px);
+        }
+
+        /* =========================
+           MD PHOTO
+        ========================= */
+
+        .md-photo-area {
+            position: relative;
+
+            width: 330px;
+            height: 400px;
+
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .md-photo-ring {
+            position: absolute;
+
+            width: 330px;
+            height: 330px;
+
+            border-radius: 50%;
+
+            border: 2px solid #00B2FF;
+
+            box-shadow:
+                0 0 20px #00B2FF,
+                0 0 50px rgba(0,178,255,0.4);
+
+            animation: mdRotate 12s linear infinite;
+        }
+
+        .md-photo-ring::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 15px;
+
+            border-radius: 50%;
+
+            border: 2px dashed #ff6600;
+
+            box-shadow:
+                0 0 20px #ff6600;
+        }
+
+        .md-photo {
+            position: relative;
+
+            width: 250px;
+            height: 300px;
+
+            object-fit: cover;
+
+            z-index: 5;
+
+            border-radius: 20px;
+
+            border: 2px solid #00B2FF;
+
+            box-shadow:
+                0 0 20px #00B2FF,
+                0 0 50px rgba(255,102,0,0.4);
+
+            background: #080808;
+        }
+
+        /* =========================
+           MESSAGE
+        ========================= */
+
+        .md-message h2 {
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 1.7rem;
+
+            color: #ffffff;
+
+            margin-bottom: 25px;
+
+            text-shadow:
+                0 0 10px #ff6600;
+        }
+
+        .md-message h3 {
+            color: #00B2FF;
+
+            font-size: 1.1rem;
+
+            margin-bottom: 20px;
+
+            letter-spacing: 2px;
+        }
+
+        .md-message p {
+            color: #d4d4d4;
+
+            font-size: 1.05rem;
+
+            line-height: 1.9;
+
+            margin-bottom: 20px;
+        }
+
+        .md-message strong {
+            color: #ffffff;
+        }
+
+        /* =========================
+           SIGNATURE
+        ========================= */
+
+        .md-signature {
+            margin-top: 35px;
+
+            padding-top: 25px;
+
+            border-top: 1px solid rgba(0,178,255,0.25);
+        }
+
+        .md-name {
+            font-family: 'Orbitron', sans-serif;
+
+            font-size: 1.3rem;
+
+            color: #ffffff;
+        }
+
+        .md-position {
+            color: #00B2FF;
+
+            margin-top: 5px;
+
+            font-weight: 500;
+        }
+
+        .md-company {
+            color: #ff6600;
+
+            margin-top: 5px;
+        }
+
+        .md-tagline {
+            margin-top: 15px;
+
+            color: #888;
+
+            font-size: 0.9rem;
+
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
+
+        .about-back {
+            text-align: center;
+
+            margin-top: 60px;
+        }
+
+        .about-back a {
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            border: 1px solid #00B2FF;
+
+            transition: 0.3s;
+
+            font-family: 'Orbitron', sans-serif;
+
+            letter-spacing: 1px;
+        }
+
+        .about-back a:hover {
+            background: #00B2FF;
+
+            color: #000000;
+
+            box-shadow:
+                0 0 20px #00B2FF,
+                0 0 40px #00B2FF;
+        }
+
+        /* =========================
+           ANIMATION
+        ========================= */
+
+        @keyframes mdRotate {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .about-page {
+                padding: 120px 20px 70px;
+            }
+
+            .md-section {
+                grid-template-columns: 1fr;
+
+                padding: 30px 20px;
+
+                gap: 40px;
+            }
+
+            .md-photo-area {
+                width: 280px;
+                height: 350px;
+            }
+
+            .md-photo-ring {
+                width: 280px;
+                height: 280px;
+            }
+
+            .md-photo {
+                width: 210px;
+                height: 260px;
+            }
+
+            .md-message h2 {
+                font-size: 1.4rem;
+            }
+
+            .md-message p {
+                font-size: 1rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+    <div id="particles"></div>
+
+
+    <!-- Navigation -->
+
+    <nav id="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html"
+               class="logo-link">
+
+                <img src="img/logo.png"
+                     alt="Digital Nepal Logo"
+                     class="main-logo">
+
+                <span class="logo-text">
+                    DIGITAL NEPAL
+                </span>
+
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html"
+                       class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://vyaparapp.in/store/hamrodigitalnepal1"
+                       class="nav-link"
+                       target="_blank">
+                        Shop Now
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#features"
+                       class="nav-link">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                       class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact"
+                       class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ABOUT PAGE -->
+
+    <main class="about-page">
+
+        <div class="about-page-container">
+
+            <div class="about-page-title">
+
+                <h1>About Digital Nepal</h1>
+
+                <p>
+                    TECHNOLOGY • CONNECTIVITY • INNOVATION
+                </p>
+
+            </div>
+
+
+            <!-- MD SECTION -->
+
+            <section class="md-section">
+
+
+                <!-- PHOTO -->
+
+                <div class="md-photo-area">
+
+                    <div class="md-photo-ring"></div>
+
+                    <img src="img/md-photo.jpg"
+                         alt="Managing Director - Digital Nepal"
+                         class="md-photo">
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="md-message">
+
+                    <h2>
+                        Message from the Managing Director
+                    </h2>
+
+                    <h3>
+                        Managing Director’s Message
+                    </h3>
+
+
+                    <p>
+                        At <strong>Digital Nepal</strong>, we believe
+                        technology is not merely a tool—it is a powerful
+                        enabler of connectivity, innovation, efficiency,
+                        and sustainable growth.
+                    </p>
+
+                    <p>
+                        With a strong commitment to digital transformation
+                        and technology-driven business solutions, our vision
+                        is to build a reliable and customer-centric digital
+                        ecosystem that connects people, businesses, and
+                        opportunities.
+                    </p>
+
+                    <p>
+                        We continuously strive to integrate
+                        <strong>emerging technologies, smart digital
+                        solutions, data-driven approaches, and modern
+                        service delivery</strong> to create meaningful value
+                        for our customers and business partners.
+                    </p>
+
+                    <p>
+                        Our journey is guided by the principles of
+                        <strong>integrity, innovation, accountability,
+                        operational excellence, and continuous improvement.</strong>
+                    </p>
+
+                    <p>
+                        We believe that long-term success is built through
+                        trust, transparent business practices, strong
+                        partnerships, and the ability to adapt to an
+                        ever-evolving technological landscape.
+                    </p>
+
+                    <p>
+                        As technology continues to reshape the way we
+                        communicate, transact, and conduct business,
+                        Digital Nepal remains committed to staying ahead
+                        of the curve.
+                    </p>
+
+                    <p>
+                        We aim to leverage
+                        <strong>digital infrastructure, automation,
+                        technology integration, and intelligent business
+                        solutions</strong> to improve accessibility,
+                        productivity, and overall customer experience.
+                    </p>
+
+                    <p>
+                        Our people and partners are at the heart of
+                        everything we do. By fostering a culture of
+                        collaboration, professionalism, learning, and
+                        innovation, we seek to create an organization
+                        that is not only technologically capable but also
+                        socially responsible and future-ready.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Our vision is simple: to contribute to a
+                            smarter, more connected, and digitally
+                            empowered Nepal.
+                        </strong>
+                    </p>
+
+                    <p>
+                        I sincerely thank our customers, partners,
+                        team members, and stakeholders for their continued
+                        trust and support. Together, we look forward to
+                        creating new possibilities, embracing innovation,
+                        and building a stronger digital future.
+                    </p>
+
+
+                    <!-- SIGNATURE -->
+
+                    <div class="md-signature">
+
+                        <div class="md-name">
+                            [Managing Director’s Name]
+                        </div>
+
+                        <div class="md-position">
+                            Managing Director
+                        </div>
+
+                        <div class="md-company">
+                            Digital Nepal
+                        </div>
+
+                        <div class="md-tagline">
+                            Technology • Connectivity • Innovation •
+                            Digital Transformation
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BACK -->
+
+            <div class="about-back">
+
+                <a href="index.html">
+                    ← BACK TO DIGITAL NEPAL
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="templatemo-electric-scripts.js"></script>
+
+</body>
+
+</html>
